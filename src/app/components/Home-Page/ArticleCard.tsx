@@ -2,17 +2,17 @@ import React from "react";
 import Image from "next/image";
 import PrimaryBtn from "../PrimaryBtn";
 import { urlFor } from "@/sanity/client";
-import Link from "next/link";
+// import Link from "next/link";
 // import Link from "next/link";
 
 const ArticleCard = ({
   title,
   image,
-  slug,
+  // slug,
 }: {
   title: string;
   image: SanityImage;
-  slug: string;
+  // slug: string;
 }) => {
   return (
     <div className="articleCard w-[320px] h-[413px] flex flex-col gap-[24px] flex-shrink-0">
@@ -28,9 +28,9 @@ const ArticleCard = ({
       </div>
       <div className="text">
         <h3 className="text-lg font-medium">{title}</h3>
-        <Link href={`/blog/${slug}`}>
-          <PrimaryBtn text="Read More" arrow={true} />
-        </Link>
+        {/* <Link href={`/blog/${slug}`}> */}
+        <PrimaryBtn text="Read More" arrow={true} />
+        {/* </Link> */}
       </div>
     </div>
   );
