@@ -3,6 +3,9 @@ import PrimaryBtn from "../PrimaryBtn";
 import ProductCard from "../ProductCard";
 import client from "@/sanity/client";
 import styles from "./FeaturesSection.module.css";
+
+export const revalidate = 10; //seconds
+
 const FeaturesSection = async () => {
   const getData = async () => {
     try {
