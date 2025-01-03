@@ -24,7 +24,7 @@ const Article = async () => {
                 key={article.slug}
                 title={article.title}
                 image={article.image}
-                slug={article.slug}
+                // slug={article.slug}
               />
             );
           }
