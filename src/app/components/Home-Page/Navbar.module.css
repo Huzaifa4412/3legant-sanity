@@ -1,0 +1,43 @@
+@media screen and (max-width: 600px) {
+  .menu_icon {
+    display: block;
+  }
+  .nav_items.active .CloseIcon {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  .nav_items {
+    display: none;
+  }
+  .nav_items.active {
+    transition: 0.5s ease-in-out;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(6px);
+    box-shadow: 2px 20px 4px black;
+    width: 350px;
+    min-width: 320px;
+    height: 100vh;
+    z-index: 99;
+
+    & ul {
+      width: 100%;
+      height: 100%;
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: center !important;
+      text-align: center;
+
+      & li {
+        font-size: 32px;
+        margin: 0 !important;
+        font-weight: 600;
+      }
+    }
+  }
+}

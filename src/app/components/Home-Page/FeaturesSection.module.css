@@ -1,0 +1,17 @@
+.features_product_container::-webkit-scrollbar {
+  height: 4px;
+  cursor: grab;
+}
+
+.features_product_container::-webkit-scrollbar-track {
+  height: 4px;
+  background-color: #e8ecef;
+  cursor: pointer;
+}
+
+.features_product_container::-webkit-scrollbar-thumb {
+  height: 4px;
+  background-color: #343839;
+  border-radius: 80px;
+  cursor: pointer;
+}
